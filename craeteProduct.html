@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/createProduct.css">
+    <title>shoping cart | create product Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> Shopping Cart</a>
+                <nav >
+                    <ul id="links">
+                        <li> <a href="login.html"> Sign In </a> </li>
+                        <li> <a href="register.html">Sign Up</a> </li>
+                    </ul>
+                    <ul id="user-info">
+                        <li><a href="profile.html" id="user"></a></li>
+                        <li><a href="favorites.html" >favorites</a></li>
+                        <li><a href="myProducts.html" >My Products</a></li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping shoppingcart"></i>
+                            <span class="badge"></span>
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartproduct.html">View All Prduct</a>
+                            </div>
+                        </li>
+                        <li> <a href="#" id="logout">Log Out</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="create-product-page">
+       <div class="container">
+            <form id="create-form">
+                <input type="file" id="uploadImg">
+                <input type="text" placeholder="Name..." id="product-name">
+                <input type="text" placeholder="description..." id="product-desc">
+                <select name="Size" id="product-size">
+                    <option hidden>Select Size...</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+    </section>
+    <script src="./js/user.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/cartMenu.js"></script>
+    <script src="./js/createProduct.js"></script>
+</body>
+
+</html>

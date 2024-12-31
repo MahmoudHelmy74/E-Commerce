@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald", serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header {
+    background-color: #333;
+    padding:10px 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color:white;
+}
+nav ul{
+    display: flex;
+}
+nav ul#user-info{
+    display: none;
+    align-items: center;
+}
+nav ul#user-info li {
+    position: relative;
+    margin: 0 7px;
+}
+nav ul#user-info li i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav ul#user-info .carts-products{
+    position: absolute;
+    width: 200px;
+    background-color: #ddd;
+    border: 1px solid darkgreen;
+    padding: 10px;
+    top: 44px;
+    left: -91px;
+    display: none; 
+}
+nav ul#user-info .carts-products a{
+    background-color: darkgreen;
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul#user-info li .badge{
+    color: #fff;
+    background-color: crimson;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 10px;
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    display: none;
+}
+nav ul li {
+    list-style: none;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    min-width: 50px;
+    padding: 5px;
+    margin: 0 10px;
+}
+/* ******form***** */
+.action-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+    background: #bc6ff1;
+    padding: 20px;
+}
+.action-form h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #52057b;
+}
+.action-form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: "Oswald", serif;
+    outline: none;
+}
+.action-form input[ type = "submit"]{
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: auto;
+}
+.action-form input[ type = "submit"]:hover{
+    opacity: .8;
+
+}
+#search{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #b5b5b5b5;
+    border-radius: 5px;
+    font-size: 15px;
+}
+/* ******products***** */
+.products{
+    width: 60%;
+    margin: 10px 0;
+    float: left;
+}
+.noProduct{
+    position: absolute;
+}
+.product-fillter{
+    width: 30%;
+    margin: 10px 0;
+    float: right;
+}
+#size-fillter{
+    width: 100%;
+    height: 40px;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.product-item-img{
+    width: 25%;
+    height: 177px;
+    margin-right: 10px;
+}
+.product-item-desc a{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+.product-item-action{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product-item .add-to-cart{
+    display: block;
+    margin-left:auto ;
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Oswald", serif;
+}
+.product-item .favorite{
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    width: 20px;
+}
+.item-detailes img{
+    width: 100%;
+    height: 400px;
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+.edit-product{
+    display: block;
+    width: 140px;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+/* ******crate Product***** */
+.create-btn{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #52057b;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.create-btn:hover{
+    opacity: 0.8;
+}
+.item-qnt{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+}
+/* ******profile page***** */
+.user-avtar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px 0;
+    
+}
